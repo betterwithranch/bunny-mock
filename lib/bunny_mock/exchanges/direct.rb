@@ -18,6 +18,8 @@ module BunnyMock
       def deliver(payload, opts, key)
         @routes[key].each { |route| route.publish payload, opts } if @routes[key]
       end
+
+      def on_return(&block); end
     end
   end
 end
