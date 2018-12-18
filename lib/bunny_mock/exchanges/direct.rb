@@ -23,6 +23,10 @@ module BunnyMock
         self
       end
 
+      def wait_for_confirms
+        true
+      end
+
     end
   end
 end
