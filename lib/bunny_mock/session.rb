@@ -99,6 +99,7 @@ module BunnyMock
       channel = Channel.new self, n
       channel.open
 
+      @status = :open
       # return channel
       @channels[n] = channel
     end
