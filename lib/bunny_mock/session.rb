@@ -37,7 +37,7 @@ module BunnyMock
     # @return [BunnyMock::Session] self
     # @api public
     def start
-      @status = :connected
+      @status = :open
       self
     end
 
@@ -58,7 +58,7 @@ module BunnyMock
     # @return [Boolean] true if status is connected, false otherwise
     # @api public
     def open?
-      @status == :connected
+      @status == :open
     end
     alias connected? open?
 
